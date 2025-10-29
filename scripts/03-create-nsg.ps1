@@ -73,8 +73,7 @@ try {
             -DestinationAddressPrefix * -DestinationPortRange $destinationPort `
             -Access $access
 
-        $nsg = New-AzNetworkSecurityGroup -ResourceGroupName $rgName `
-            -Location $location -Name $nsgName -SecurityRules $nsgRule
+       
 
         Write-Log "NSG '$nsgName' created successfully with rule '$ruleName'."
     }
