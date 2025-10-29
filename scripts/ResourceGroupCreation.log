@@ -1,0 +1,11 @@
+[2025-10-29 23:06:22] Starting Resource Group creation process...
+[2025-10-29 23:06:36] Resource group 'CloudInfraRGusingpowershell' created successfully in 'EastUS'.
+[2025-10-29 23:06:36] Script completed successfully.
+[2025-10-29 23:07:07] Starting Resource Group creation process...
+[2025-10-29 23:07:10] Resource group 'CloudInfraRGusingpowershell' already exists in location 'eastus'.
+[2025-10-29 23:07:10] Script completed successfully.
+[2025-10-29 23:08:29] Starting Resource Group creation process...
+[2025-10-29 23:08:32] ERROR: The provided location 'WrongLocation' is not available for resource group. List of available regions is 'australiacentral,australiaeast,australiasoutheast,brazilsouth,canadacentral,canadaeast,centralindia,centralus,eastasia,eastus2,eastus,francecentral,germanywestcentral,japaneast,japanwest,jioindiawest,koreacentral,koreasouth,northcentralus,northeurope,norwayeast,southafricanorth,southcentralus,southindia,southeastasia,swedencentral,switzerlandnorth,uaenorth,uksouth,ukwest,westcentralus,westeurope,westindia,westus2,westus3,westus,qatarcentral,israelcentral,polandcentral,italynorth,spaincentral,mexicocentral,austriaeast,chilecentral,malaysiawest,newzealandnorth,indonesiacentral,belgiumcentral,australiacentral2'.
+StatusCode: 400
+ReasonPhrase: Bad Request
+OperationID : c4c098f6-54e6-4da4-afb4-6eea019d16be
