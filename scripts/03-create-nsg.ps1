@@ -39,9 +39,11 @@ param(
     [string]$logFile = ".\NSGCreation.log"
 )
 
+# Strict mode + stop on any failure
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+# Logging function
 function Write-Log {
     param([string]$message)
     $timestamp = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
@@ -63,19 +65,23 @@ try {
     $existingNSG = Get-AzNetworkSecurityGroup -Name $nsgName -ResourceGroupName $rgName -ErrorAction SilentlyContinue
 
     if ($existingNSG) {
-        Write-Log "NSG '$nsgName' already exists in '$($existingNSG.Location)'. Skipping creation."
+        Write-Log "NSG '$nsgName' already exists in resource group '$rgName'. Skipping creation."
     }
     else {
-        Write-Log "Creating new NSG '$nsgName'..."
+        Write-Log "Creating new NSG '$nsgName' in resource group '$rgName' at location '$location'..."
+
         $nsgRule = New-AzNetworkSecurityRuleConfig -Name $ruleName `
             -Protocol $protocol -Direction "Inbound" -Priority $priority `
             -SourceAddressPrefix * -SourcePortRange * `
             -DestinationAddressPrefix * -DestinationPortRange $destinationPort `
             -Access $access
 
-       
+        # ✅ Actually create the NSG here
+        $nsg = New-AzNetworkSecurityGroup -Name $nsgName `
+            -ResourceGroupName $rgName -Location $location `
+            -SecurityRules $nsgRule
 
-        Write-Log "NSG '$nsgName' created successfully with rule '$ruleName'."
+        Write-Log "NSG '$nsgName' created successfully in resource group '$rgName' with rule '$ruleName'."
     }
 
     Write-Log "NSG creation script completed successfully."

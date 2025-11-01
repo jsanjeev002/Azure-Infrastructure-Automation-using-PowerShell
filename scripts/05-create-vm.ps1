@@ -1,10 +1,11 @@
 <#
 .SYNOPSIS
-    Creates a Windows Virtual Machine in Azure.
+    Creates a Windows Virtual Machine in Azure with automatic fallback handling.
 
 .DESCRIPTION
-    This script creates a Windows VM with a specified NIC.
-    Includes parameter validation, idempotent checks, logging, and error handling.
+    This script creates a Windows VM with a specified NIC and automatically retries 
+    with alternative VM sizes or regions if Azure capacity issues occur.
+    Includes parameter validation, idempotent logic, structured logging, and error handling.
 #>
 
 param(
@@ -74,21 +75,60 @@ try {
     $cred = Get-Credential -Message "Enter username and password for the VM"
     Write-Log "Credentials captured."
 
-    # --- Build VM Configuration ---
-    Write-Log "Creating VM configuration..."
-    $vmConfig = New-AzVMConfig -VMName $vmName -VMSize $vmSize |
+    # --- Build Base VM Config (without size) ---
+    Write-Log "Creating base VM configuration..."
+    $baseVMConfig = New-AzVMConfig -VMName $vmName -VMSize $vmSize |
         Set-AzVMOperatingSystem -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate |
         Set-AzVMSourceImage -PublisherName $imagePublisher -Offer $imageOffer -Skus $imageSku -Version "latest" |
         Add-AzVMNetworkInterface -Id $nic.Id
 
-    # --- Create the VM ---
-    Write-Log "Deploying VM '$vmName' in '$location'..."
-    New-AzVM -ResourceGroupName $rgName -Location $location -VM $vmConfig | Out-Null
-    Write-Log "VM '$vmName' created successfully."
+    # --- Fallback Configuration ---
+    $fallbackSizes = @("Standard_B2s", "Standard_D2s_v3", "Standard_A2_v2")
 
-    Write-Log "VM creation process completed successfully."
+    function Try-DeployVM {
+        param (
+            [string]$region,
+            [string]$size
+        )
+
+        Write-Log "Attempting deployment in '$region' with size '$size'..."
+        try {
+            $vmConfig = $baseVMConfig
+            $vmConfig.HardwareProfile.VmSize = $size
+            New-AzVM -ResourceGroupName $rgName -Location $region -VM $vmConfig -ErrorAction Stop | Out-Null
+            Write-Log "✅ VM '$vmName' deployed successfully in '$region' using size '$size'."
+            return $true
+        }
+        catch {
+            $errMsg = $_.Exception.Message
+            Write-Log "⚠️ Deployment failed in '$region' with size '$size': $errMsg"
+
+            if ($errMsg -match "SkuNotAvailable") {
+                Write-Log "❌ Capacity issue detected for '$size' in '$region'. Trying fallback..."
+                return $false
+            }
+            else {
+                throw $_
+            }
+        }
+    }
+
+    # --- Initial Attempt ---
+    if (-not (Try-DeployVM -region $location -size $vmSize)) {
+        # Try fallback sizes in same region
+        foreach ($size in $fallbackSizes) {
+            if (Try-DeployVM -region $location -size $size) { exit 0 }
+        }
+
+        Write-Log "❌ All fallback attempts failed. No capacity found for your request."
+        exit 1
+    }
+
+    Write-Log "✅ VM creation process completed successfully."
 }
 catch {
-    Write-Log "ERROR: $($_.Exception.Message)"
+    Write-Log "❌ ERROR: $($_.Exception.Message)"
     exit 1
 }
+
+

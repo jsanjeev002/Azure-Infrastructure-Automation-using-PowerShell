@@ -1,0 +1,47 @@
+[2025-11-01 19:28:14][INFO] Starting Blob Storage automation...
+[2025-11-01 19:28:14][INFO] Resource Group: rgpowershell | Location: eastus | Storage: demostorage | Container: demoblob
+[2025-11-01 19:28:19][INFO] Creating new storage account 'demostorage'...
+[2025-11-01 19:28:20][ERROR] Failed to create or retrieve storage account : The storage account named demostorage is already taken. (Parameter 'Name')
+[2025-11-01 19:29:06][INFO] Starting Blob Storage automation...
+[2025-11-01 19:29:06][INFO] Resource Group: rgpowershell | Location: eatus | Storage: demostorage2 | Container: demoblob2
+[2025-11-01 19:29:07][INFO] Creating new storage account 'demostorage2'...
+[2025-11-01 19:29:08][ERROR] Failed to create or retrieve storage account : The storage account named demostorage2 is already taken. (Parameter 'Name')
+[2025-11-01 19:36:39][INFO] 🚀 Starting Blob Storage automation...
+[2025-11-01 19:36:39][INFO] Resource Group: rgpowershell | Location: eastus | Storage: demostoragepowershell | Container: demoblobpowershell
+[2025-11-01 19:36:40][INFO] Creating storage account 'demostoragepowershell' in eastus...
+[2025-11-01 19:37:41][INFO] Creating container 'demoblobpowershell'...
+[2025-11-01 19:37:41][ERROR] ❌ Failed to create or retrieve blob container : Public access is not permitted on this storage account.
+RequestId:2b94fa2a-601e-0039-5938-4b59d8000000
+Time:2025-11-01T14:07:41.5363365Z
+Status: 409 (Public access is not permitted on this storage account.)
+ErrorCode: PublicAccessNotPermitted
+
+Content:
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>PublicAccessNotPermitted</Code><Message>Public access is not permitted on this storage account.
+RequestId:2b94fa2a-601e-0039-5938-4b59d8000000
+Time:2025-11-01T14:07:41.5363365Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 2b94fa2a-601e-0039-5938-4b59d8000000
+x-ms-client-request-id: 0a6f99a9-6de0-4b99-98aa-3f10039d9c6a
+x-ms-version: 2025-05-05
+x-ms-error-code: PublicAccessNotPermitted
+Date: Sat, 01 Nov 2025 14:07:41 GMT
+Content-Length: 248
+Content-Type: application/xml
+
+[2025-11-01 19:53:20][INFO] 🚀 Starting Blob Storage automation...
+[2025-11-01 19:53:20][INFO] Resource Group: demopowershellstorage | Location: eastus | Storage: demopowershell | Container: demoblob
+[2025-11-01 19:53:21][INFO] Creating storage account 'demopowershell' in eastus...
+[2025-11-01 19:53:54][ERROR] ❌ Failed to create or retrieve storage account : Resource group 'demopowershellstorage' could not be found.
+[2025-11-01 19:54:58][INFO] 🚀 Starting Blob Storage automation...
+[2025-11-01 19:54:58][INFO] Resource Group: rgpowershell | Location: eastus | Storage: demopowershellstorage | Container: demoblob
+[2025-11-01 19:54:59][INFO] Creating storage account 'demopowershellstorage' in eastus...
+[2025-11-01 19:55:30][INFO] 🪣 Creating public container 'demoblob'...
+[2025-11-01 19:55:31][INFO] ✅ Container 'demoblob' created successfully.
+[2025-11-01 19:55:31][INFO] Uploading '.\sample.txt' to 'demoblob'...
+[2025-11-01 19:55:32][INFO] ✅ File uploaded successfully.
+[2025-11-01 19:55:32][INFO] Downloading blob to '.\downloaded_sample.txt'...
+[2025-11-01 19:55:33][INFO] ✅ File downloaded successfully to '.\downloaded_sample.txt'.
+[2025-11-01 19:55:33][INFO] 🎯 Blob Storage automation completed successfully!

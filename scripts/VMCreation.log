@@ -1,0 +1,150 @@
+[2025-11-01 18:33:19] Starting VM creation process for 'demovm'...
+[2025-11-01 18:33:20] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 18:33:44] Credentials captured.
+[2025-11-01 18:33:44] Creating VM configuration...
+[2025-11-01 18:33:44] Deploying VM 'demovm' in 'east us'...
+[2025-11-01 18:34:19] ERROR: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 4a13cb75-b807-47dd-842b-a535b12c8d5e
+[2025-11-01 18:38:37] Starting VM creation process for 'demovm'...
+[2025-11-01 18:38:38] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 18:38:49] Credentials captured.
+[2025-11-01 18:38:49] Creating VM configuration...
+[2025-11-01 18:38:49] Deploying VM 'demovm' in 'east us'...
+[2025-11-01 18:39:22] ERROR: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : f8bb27cc-350a-4abf-8b57-24d401a131a2
+[2025-11-01 19:01:02] Starting VM creation process for 'demovm'...
+[2025-11-01 19:01:03] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 19:01:19] Credentials captured.
+[2025-11-01 19:01:19] Creating VM configuration...
+[2025-11-01 19:01:20] Deploying VM 'demovm' in 'eastus'...
+[2025-11-01 19:01:55] ERROR: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 7dbc6a7b-f439-45dc-bd75-ec793946ac82
+[2025-11-01 19:11:32] Starting VM creation process for 'demovm'...
+[2025-11-01 19:11:34] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 19:11:45] Credentials captured.
+[2025-11-01 19:11:45] Creating base VM configuration...
+[2025-11-01 19:11:46] Attempting deployment in 'eastus' with size 'Standard_B1s'...
+[2025-11-01 19:11:46] ⚠️ Deployment failed in 'eastus' with size 'Standard_B1s': The term 'Set-AzVMSize' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2025-11-01 19:11:46] ❌ ERROR: The term 'Set-AzVMSize' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2025-11-01 19:12:15] Starting VM creation process for 'demovm'...
+[2025-11-01 19:12:16] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 19:12:25] Credentials captured.
+[2025-11-01 19:12:25] Creating base VM configuration...
+[2025-11-01 19:12:26] Attempting deployment in 'eastus' with size 'Standard_B1s'...
+[2025-11-01 19:12:26] ⚠️ Deployment failed in 'eastus' with size 'Standard_B1s': The term 'Set-AzVMSize' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2025-11-01 19:12:26] ❌ ERROR: The term 'Set-AzVMSize' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2025-11-01 19:15:10] Starting VM creation process for 'demovm'...
+[2025-11-01 19:15:10] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 19:15:20] Credentials captured.
+[2025-11-01 19:15:20] Creating base VM configuration...
+[2025-11-01 19:15:21] Attempting deployment in 'eastus' with size 'Standard_B1s'...
+[2025-11-01 19:15:55] ⚠️ Deployment failed in 'eastus' with size 'Standard_B1s': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: Conflict
+OperationID : dfa47fe0-0a65-43c7-bac7-a913057700b5
+[2025-11-01 19:15:55] ❌ Capacity issue detected for 'Standard_B1s' in 'eastus'. Trying fallback...
+[2025-11-01 19:15:55] Attempting deployment in 'eastus' with size 'Standard_B2s'...
+[2025-11-01 19:15:57] ⚠️ Deployment failed in 'eastus' with size 'Standard_B2s': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 5d3d9ef7-1738-434b-9158-443d4ae2e5e2
+[2025-11-01 19:15:57] ❌ Capacity issue detected for 'Standard_B2s' in 'eastus'. Trying fallback...
+[2025-11-01 19:15:57] Attempting deployment in 'eastus' with size 'Standard_D2s_v3'...
+[2025-11-01 19:15:58] ⚠️ Deployment failed in 'eastus' with size 'Standard_D2s_v3': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 237d4263-4483-44f8-be8c-077155b9d9c3
+[2025-11-01 19:15:58] ❌ Capacity issue detected for 'Standard_D2s_v3' in 'eastus'. Trying fallback...
+[2025-11-01 19:15:58] Attempting deployment in 'eastus' with size 'Standard_A2_v2'...
+[2025-11-01 19:15:59] ⚠️ Deployment failed in 'eastus' with size 'Standard_A2_v2': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_A2_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_A2_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 2c16e77b-d182-4ef9-8040-4f30d7156a56
+[2025-11-01 19:15:59] ❌ Capacity issue detected for 'Standard_A2_v2' in 'eastus'. Trying fallback...
+[2025-11-01 19:15:59] Attempting deployment in 'eastus2' with size 'Standard_B2s'...
+[2025-11-01 19:16:01] ⚠️ Deployment failed in 'eastus2' with size 'Standard_B2s': Could not resolve storage account 'exodurgpowedemo110119150'. Please ensure it was created through the Storage Resource Provider in the same location as the compute resource.
+ErrorCode: StorageAccountLocationMismatch
+ErrorMessage: Could not resolve storage account 'exodurgpowedemo110119150'. Please ensure it was created through the Storage Resource Provider in the same location as the compute resource.
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: Bad Request
+OperationID : aea18697-c7cb-4cde-8541-77bcad27c5c1
+[2025-11-01 19:16:01] ❌ ERROR: Could not resolve storage account 'exodurgpowedemo110119150'. Please ensure it was created through the Storage Resource Provider in the same location as the compute resource.
+ErrorCode: StorageAccountLocationMismatch
+ErrorMessage: Could not resolve storage account 'exodurgpowedemo110119150'. Please ensure it was created through the Storage Resource Provider in the same location as the compute resource.
+ErrorTarget: 
+StatusCode: 400
+ReasonPhrase: Bad Request
+OperationID : aea18697-c7cb-4cde-8541-77bcad27c5c1
+[2025-11-01 19:22:42] Starting VM creation process for 'demovm'...
+[2025-11-01 19:22:44] Using existing NIC 'demonic' (ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic)
+[2025-11-01 19:22:54] Credentials captured.
+[2025-11-01 19:22:54] Creating base VM configuration...
+[2025-11-01 19:22:54] Attempting deployment in 'eastus' with size 'Standard_B1s'...
+[2025-11-01 19:23:29] ⚠️ Deployment failed in 'eastus' with size 'Standard_B1s': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B1s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : ffd4e690-ce11-4138-a11a-f04c75b39b5f
+[2025-11-01 19:23:29] ❌ Capacity issue detected for 'Standard_B1s' in 'eastus'. Trying fallback...
+[2025-11-01 19:23:29] Attempting deployment in 'eastus' with size 'Standard_B2s'...
+[2025-11-01 19:23:30] ⚠️ Deployment failed in 'eastus' with size 'Standard_B2s': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_B2s' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : bcdc61d2-c61c-42cf-a520-f4f1a2793326
+[2025-11-01 19:23:30] ❌ Capacity issue detected for 'Standard_B2s' in 'eastus'. Trying fallback...
+[2025-11-01 19:23:30] Attempting deployment in 'eastus' with size 'Standard_D2s_v3'...
+[2025-11-01 19:23:31] ⚠️ Deployment failed in 'eastus' with size 'Standard_D2s_v3': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_D2s_v3' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 29ccc116-6925-4988-b18e-0d5b0b530be1
+[2025-11-01 19:23:31] ❌ Capacity issue detected for 'Standard_D2s_v3' in 'eastus'. Trying fallback...
+[2025-11-01 19:23:31] Attempting deployment in 'eastus' with size 'Standard_A2_v2'...
+[2025-11-01 19:23:33] ⚠️ Deployment failed in 'eastus' with size 'Standard_A2_v2': The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_A2_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorCode: SkuNotAvailable
+ErrorMessage: The requested VM size for resource 'Following SKUs have failed for Capacity Restrictions: Standard_A2_v2' is currently not available in location 'eastus'. Please try another size or deploy to a different location or different zone. See https://aka.ms/azureskunotavailable for details.
+ErrorTarget: vmSize
+StatusCode: 409
+ReasonPhrase: 
+OperationID : 436e2d1d-62c6-45bc-93ae-dc1c2ddc2b77
+[2025-11-01 19:23:33] ❌ Capacity issue detected for 'Standard_A2_v2' in 'eastus'. Trying fallback...
+[2025-11-01 19:23:33] ❌ All fallback attempts failed. No capacity found for your request.

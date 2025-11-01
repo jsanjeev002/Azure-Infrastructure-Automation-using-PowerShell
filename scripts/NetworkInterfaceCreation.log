@@ -1,0 +1,13 @@
+[2025-11-01 18:24:08] Starting NIC creation process...
+[2025-11-01 18:24:10] ERROR: The Resource 'Microsoft.Network/networkSecurityGroups/demonsg' under resource group 'rgpowershell' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix
+StatusCode: 404
+ReasonPhrase: Not Found
+ErrorCode: ResourceNotFound
+ErrorMessage: The Resource 'Microsoft.Network/networkSecurityGroups/demonsg' under resource group 'rgpowershell' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix
+OperationID : fa414eae-abdc-4ea3-8230-434cdbbc658b
+[2025-11-01 18:32:17] Starting NIC creation process...
+[2025-11-01 18:32:20] Creating Public IP 'demopublicip'...
+[2025-11-01 18:32:25] Public IP 'demopublicip' created successfully.
+[2025-11-01 18:32:26] Creating NIC 'demonic'...
+[2025-11-01 18:32:33] NIC 'demonic' created successfully. ID: /subscriptions/24ccaf1e-bcbe-4a1b-a779-9aeca79babd6/resourceGroups/rgpowershell/providers/Microsoft.Network/networkInterfaces/demonic
+[2025-11-01 18:32:33] Network interface creation completed successfully.
